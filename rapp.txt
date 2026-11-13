@@ -1,0 +1,25 @@
+Voici tes résultats formatés exactement selon la structure **Cause -> Conséquence**, prêts à être intégrés dans ton notebook ou ton rapport final :
+
+**Cause :** Présence de texte fusionné avec les nombres (ex: `14.55 sealed_lot`) dans la colonne `opening_stock` (Table *Month End*).
+**Conséquence :** Les calculs de stocks faussent ou ignorent ces valeurs, ce qui masque l'inventaire réel et nécessite un nettoyage des données (expressions régulières) avant toute analyse.
+
+**Cause :** 14 partenaires commerciaux (Table *Business Partners*) n'ont aucun numéro d'enregistrement officiel (`external_registration_number` = NaN) et portent des noms de ministères, douanes ou chancelleries.
+**Conséquence :** Révélation d'un réseau d'entités gouvernementales opérant "sous le radar", en dehors des processus d'immatriculation commerciaux standards de l'ERP.
+
+**Cause :** Des articles de catégories `biological_sample` (échantillons biologiques) et `monitoring_equipment` (matériel de surveillance) sont expédiés vers ces agences d'État.
+**Conséquence :** Mise en évidence d'un trafic de matériel hautement sensible, totalement incohérent avec les activités d'un réseau logistique classique de distribution.
+
+**Cause :** Les motifs déclarés (`declared_purpose`) pour ces envois sensibles sont étiquetés comme de simples "transferts de stocks planifiés" (`scheduled stock transfer`) ou "réapprovisionnements" (`facility replenishment`).
+**Conséquence :** Découverte d'une dissimulation administrative délibérée (une couverture) consistant à noyer ces expéditions confidentielles dans la masse des opérations de routine.
+
+**Cause :** L'analyse temporelle des expéditions gouvernementales montre une progression allant de 1 seul envoi en 2015 à un pic de 13 expéditions en 2020.
+**Conséquence :** Preuve formelle qu'il s'agit d'un protocole opérationnel déployé progressivement et délibérément dans le temps, et non d'un simple bug informatique ponctuel.
+
+**Cause :** La majorité des expéditions de ces colis sensibles provient d'une seule et même installation : le `Meridian Tembara Coastal Hub`.
+**Conséquence :** Identification de la plaque tournante physique (l'épicentre opérationnel) de ce réseau parallèle.
+
+**Cause :** Les disparitions de ce matériel sensible sont justifiées dans le système d'inventaire (Table *Adjustments*) par des `transfer posting correction` (erreurs de saisie) ou `cycle count correction` (erreurs de comptage).
+**Conséquence :** Preuve d'un maquillage comptable interne permettant de faire "disparaître" discrètement des équipements des stocks officiels sans éveiller les soupçons.
+
+**Cause :** Ces ajustements de stocks douteux sont validés dans le système par des directeurs régionaux (`regional operations manager`) et des contrôleurs financiers (`finance controller`).
+**Conséquence :** Preuve finale que ce réseau logistique de l'ombre n'est pas le fait de quelques employés isolés, mais qu'il est validé et couvert au plus haut niveau de la hiérarchie.
