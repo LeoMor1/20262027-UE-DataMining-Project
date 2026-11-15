@@ -27,6 +27,8 @@ L'enquête s'organise autour de quatre domaines :
 
 Le fil conducteur qui se dessine progressivement est celui d'un possible **circuit biologique confidentiel**, reliant des activités de terrain, une chaîne logistique spécialisée et un programme clinique soumis à des autorisations restreintes. Le projet ne cherche pas à présenter cette interprétation comme une vérité définitivement établie : il distingue les observations issues des notebooks des hypothèses proposées pour expliquer leur convergence.
 
+Les résultats soulèvent également une piste intéressante autour de la longévité biologique. Certaines recherches scientifiques étudient les mécanismes qui pourraient expliquer la longévité exceptionnelle de certaines espèces, notamment les chauves-souris. On peut alors se demander si les échantillons biologiques identifiés dans notre enquête pourraient être liés à des recherches de ce type, éventuellement en rapport avec les procédures médicales observées par la suite
+
 ---
 
 ## 2. Organisation du projet
@@ -173,6 +175,8 @@ Cette découverte ouvre une hypothèse : MRP-42 pourrait être associé à un pr
 
 Les écarts d'inventaire, les documents sécurisés et le témoignage sur les chauves-souris pourraient indiquer que certaines activités biologiques ne sont pas entièrement visibles dans les registres ordinaires. Le profil des bénéficiaires de MRP-42 donne à ce programme une finalité potentiellement liée à la résilience métabolique ou au vieillissement.
 
+Une piste complémentaire pourrait concerner les mécanismes biologiques associés à la longévité. Certaines recherches scientifiques, notamment menées sur des modèles animaux comme la souris, étudient des protéines et des mécanismes susceptibles d'influencer le vieillissement. Les chauves-souris présentent également des caractéristiques biologiques intéressantes pour la recherche sur la longévité. On peut donc envisager que les collectes biologiques identifiées dans notre enquête puissent être liées à l'étude de tels mécanismes. Si cette piste était confirmée, elle pourrait apporter un éclairage sur la finalité éventuelle de MRP-42 et sur les profils biologiques observés chez certains patients. Toutefois, aucun élément de nos données ne permet actuellement d'établir ce lien.
+
 
 ---
 
@@ -199,6 +203,7 @@ Pour préserver la rigueur de l'enquête, il est important de distinguer les obs
 - Le programme MRP-42 aurait pour objectif de prolonger la longévité ou de modifier durablement le vieillissement.
 - Certaines identités historiques correspondraient à une même personne.
 - Le groupe CORE et les bénéficiaires de MRP-42 seraient liés.
+- Les collectes biologiques pourraient viser l'étude de mécanismes de longévité chez les chauves-souris, avec une éventuelle application à la recherche sur le vieillissement humain.
 
 
 ---
