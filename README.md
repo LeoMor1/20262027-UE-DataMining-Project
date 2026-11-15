@@ -94,7 +94,7 @@ L'analyse des rapports de terrain réduit ensuite l'investigation à quelques ob
 
 **Ce que cette partie apporte au secret :** elle fait émerger une possible activité humaine sur un site où la baisse de la population animale ne semble pas avoir d'explication naturelle ou technique immédiate. KNT-KES devient ainsi un lieu important à rapprocher des demandes d'accès étudiées dans Public Records.
 
-## 4.2. Public Records — Des accès récurrents et des archives troublantes
+## 4.2. Public Records - Analyse des accès et des archives
 
 La partie Public Records examine les demandes d'accès aux sites, les étapes de leur traitement, les organisations impliquées, les relations entre dirigeants et les documents institutionnels ou d'investigation.
 
