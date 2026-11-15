@@ -273,3 +273,23 @@ jupyter lab
 Les notebooks utilisent notamment des bibliothèques de traitement de données, de visualisation, de statistiques et de Machine Learning telles que `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `scikit-learn` et les outils Jupyter.
 
 **Remarque :** le fichier `requirements.txt` fourni est un export d'environnement Conda spécifique à Windows. Selon le système d'exploitation et la version de Python utilisés, certaines dépendances peuvent nécessiter une installation ou une adaptation.
+
+## 10. Références scientifiques
+
+Afin d'apporter un contexte scientifique à notre hypothèse autour de la longévité biologique, nous nous sommes appuyés sur plusieurs travaux de recherche portant sur les mécanismes du vieillissement chez les mammifères, notamment les souris et les chauves-souris.
+
+1. **Sinha, M. et al. (2014).** *Restoring systemic GDF11 levels reverses age-related dysfunction in mouse skeletal muscle.* Science, 344(6184), 649–652.  
+   [https://pubmed.ncbi.nlm.nih.gov/24797481/](https://pubmed.ncbi.nlm.nih.gov/24797481/)  
+   Cette étude examine le rôle de la protéine GDF11 dans le fonctionnement et la régénération musculaire chez des souris âgées.
+
+2. **Huang, Z. et al. (2019).** *Longitudinal comparative transcriptomics reveals unique mechanisms underlying extended healthspan in bats.* Nature Ecology & Evolution, 3, 1110–1120.  
+   [https://doi.org/10.1038/s41559-019-0913-3](https://doi.org/10.1038/s41559-019-0913-3)  
+   Cette recherche étudie les signatures moléculaires associées au vieillissement en bonne santé chez les chauves-souris, à partir d'une analyse longitudinale de l'expression des gènes.
+
+3. **Kacprzyk, J. et al. (2021).** *Evolution of mammalian longevity: age-related increase in autophagy in bats compared to other mammals.* Aging, 13(6), 7998–8025.  
+   [https://pubmed.ncbi.nlm.nih.gov/33744862/](https://pubmed.ncbi.nlm.nih.gov/33744862/)  
+   Cette étude met en évidence une augmentation particulière de l'expression de mécanismes liés à l'autophagie avec l'âge chez les chauves-souris, un processus impliqué dans le maintien de l'équilibre cellulaire.
+
+4. **Vazquez, J. M. et al. (2026).** *Insights into longevity and virus-driven adaptation from Myotis bat genomes.* Nature, 658, 153–162.  
+   [https://doi.org/10.1038/s41586-026-10932-7](https://doi.org/10.1038/s41586-026-10932-7)  
+   Cette publication récente analyse les adaptations génétiques de plusieurs espèces de chauves-souris du genre *Myotis*, en étudiant notamment les mécanismes associés à la longévité, à la résistance au cancer et aux interactions avec les virus.
