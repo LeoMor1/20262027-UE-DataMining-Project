@@ -112,19 +112,49 @@ Enfin, certains documents décrivent des stratégies environnementales opposées
 
 ## 4.3. Logistics — Le circuit entre le terrain et les établissements médicaux
 
-La partie Logistics suit les partenaires, les expéditions, les réceptions, les stocks et les mouvements de marchandises. Elle permet de passer des autorisations administratives à des mouvements matériels observables dans les données.
+La partie Logistics suit les partenaires, les expéditions, les réceptions, les stocks et les mouvements de marchandises. Elle permet de passer des autorisations administratives à des mouvements matériels observables dans les données. L’analyse combine règles d’association (Apriori), détection d’anomalies (IQR, z-score modifié, Isolation Forest, LOF, DBSCAN, visualisés par ACP), clustering (K-Means validé par CAH), analyse de réseau et tests statistiques.
 
-Un premier circuit apparaît autour de **Horizon Field Research Cooperative**, **Northstar Cold Chain Services** et **Meridian BioLogistics**. Les données recensent des expéditions d'échantillons biologiques conservés entre 2 et 8 °C. Plusieurs expéditions présentent des caractéristiques inhabituelles, notamment des trajets enregistrés comme des boucles.
+### 1. Premier circuit : Horizon, Northstar et Meridian
 
-Le rapprochement temporel avec les accès aux sites est particulièrement intéressant : les expéditions environnementales sont étroitement synchronisées avec les accès de Horizon, avec un délai médian court entre les deux événements. Cette régularité renforce l'hypothèse d'un lien opérationnel entre les activités de terrain et le circuit logistique.
+Un premier circuit apparaît autour de **Horizon Field Research Cooperative**, **Northstar Cold Chain Services** et **Meridian BioLogistics**.
 
-L'analyse des inventaires fait également ressortir des écarts de matériel biologique dans plusieurs établissements. Certains ajustements ne permettent pas de reconstituer clairement les mouvements concernés. Ces anomalies signalent une traçabilité incomplète, mais ne suffisent pas à démontrer une dissimulation volontaire.
+Apriori isole 18 expéditions d’échantillons biologiques conservés entre 2 et 8 °C (lift de 22,5), dont 11 sont enregistrées comme des boucles, contre 11 sur 432 pour les autres expéditions (Fisher, p ≈ 6·10⁻¹²).
 
-Un second circuit conduit de **Meridian BioLogistics** vers des établissements du réseau **Asterion**. Les livraisons cliniques sont rapprochées des procédures médicales. Une association très marquée apparaît avec une procédure particulière : **MRP-42 — Targeted Metabolic Resilience Administration**. Les livraisons étudiées sont suivies, sur le même site, d'une procédure MRP-42, généralement quelques jours plus tard. Les autres procédures médicales ne présentent pas le même comportement dans les comparaisons réalisées.
+Le K-Means regroupe ces trois acteurs dans un cluster à part.
 
-Les documents internes font aussi apparaître les désignations **CHAMELEO** et **Unwabu**. Ils décrivent un dispositif dans lequel les informations ordinaires sur les expéditions seraient séparées des annexes sécurisées : les équipes d'entrepôt verraient les catégories et quantités déclarées, tandis que les itinéraires détaillés seraient conservés par des équipes de sécurité et de conformité. La finalité réelle de ce dispositif reste inconnue.
+Les 18 accès aux sites demandés par Horizon sont tous suivis d’une expédition environnementale dans les 48 heures (délai médian de 15 h), contre 0 sur 36 pour les autres organisations, ce qui renforce l’hypothèse d’un lien opérationnel entre le terrain et le circuit logistique.
 
-**Ce que cette partie apporte au secret :** elle fait apparaître deux flux qui convergent autour de Meridian : un flux environnemental associé à Horizon et Northstar, et un flux clinique destiné aux établissements Asterion. Elle met également en évidence des anomalies de stock et une procédure médicale étroitement associée aux livraisons.
+### 2. Anomalies dans les inventaires biologiques
+
+Les inventaires font ressortir des écarts de matériel biologique : 26 écarts aberrants sur 502 (IQR et z-score), dont 13 confirmés par Isolation Forest, LOF et DBSCAN à la fois.
+
+Ils se concentrent sur les sites de Meridian (FCL-1019, FCL-1020, FCL-1027).
+
+Les mois avec expédition présentent un écart moyen de −7,2 unités contre +0,1 sans expédition (p = 0,0001), et les ajustements n’expliquent qu’environ 20 % de ces baisses : ce sont des sorties non documentées.
+
+### 3. Second circuit : Meridian et les établissements Asterion
+
+Un second circuit conduit de **Meridian BioLogistics** vers les établissements **Asterion**.
+
+Les 26 livraisons cliniques sont toutes suivies, sur le même site, d’une procédure **MRP-42 — Targeted Metabolic Resilience Administration** (délai médian de 6,5 jours).
+
+Sur 49 procédures MRP-42, 28 suivent une livraison, contre environ 4 attendues au hasard. Les six autres procédures ne présentent pas ce comportement.
+
+### 4. Les documents internes : CHAMELEO et Unwabu
+
+Les documents internes font apparaître les désignations **CHAMELEO** et **Unwabu** : un dispositif séparant les informations ordinaires sur les expéditions d’annexes sécurisées contenant les itinéraires détaillés.
+
+
+Le message de la lanceuse d’alerte **Mara Venn** affirme que des chauves-souris *Eonycteris spelaea* ont été collectées puis retirées des inventaires habituels, ce qui relie les stocks biologiques manquants aux chauves-souris et à des expériences sur la longévité et la résilience métabolique (MRP-42).
+
+### 5. Ce que cette partie apporte au secret
+
+Elle fait apparaître deux flux qui convergent autour de Meridian :
+
+- **Un flux environnemental** associé à Horizon et Northstar, déclenché par les accès aux sites.
+- **Un flux clinique** destiné aux établissements Asterion, systématiquement suivi de la procédure MRP-42.
+
+Elle met aussi en évidence des anomalies de stock biologique, confirmées par plusieurs méthodes, qui seraient liées aux chauves-souris.
 
 ## 4.4. Health — Deux phénomènes médicaux distincts
 
@@ -243,23 +273,3 @@ jupyter lab
 Les notebooks utilisent notamment des bibliothèques de traitement de données, de visualisation, de statistiques et de Machine Learning telles que `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `scikit-learn` et les outils Jupyter.
 
 **Remarque :** le fichier `requirements.txt` fourni est un export d'environnement Conda spécifique à Windows. Selon le système d'exploitation et la version de Python utilisés, certaines dépendances peuvent nécessiter une installation ou une adaptation.
-
-## 10. Références scientifiques
-
-Afin d'apporter un contexte scientifique à notre hypothèse autour de la longévité biologique, nous nous sommes appuyés sur plusieurs travaux de recherche portant sur les mécanismes du vieillissement chez les mammifères, notamment les souris et les chauves-souris.
-
-1. **Sinha, M. et al. (2014).** *Restoring systemic GDF11 levels reverses age-related dysfunction in mouse skeletal muscle.* Science, 344(6184), 649–652.  
-   [https://pubmed.ncbi.nlm.nih.gov/24797481/](https://pubmed.ncbi.nlm.nih.gov/24797481/)  
-   Cette étude examine le rôle de la protéine GDF11 dans le fonctionnement et la régénération musculaire chez des souris âgées.
-
-2. **Huang, Z. et al. (2019).** *Longitudinal comparative transcriptomics reveals unique mechanisms underlying extended healthspan in bats.* Nature Ecology & Evolution, 3, 1110–1120.  
-   [https://doi.org/10.1038/s41559-019-0913-3](https://doi.org/10.1038/s41559-019-0913-3)  
-   Cette recherche étudie les signatures moléculaires associées au vieillissement en bonne santé chez les chauves-souris, à partir d'une analyse longitudinale de l'expression des gènes.
-
-3. **Kacprzyk, J. et al. (2021).** *Evolution of mammalian longevity: age-related increase in autophagy in bats compared to other mammals.* Aging, 13(6), 7998–8025.  
-   [https://pubmed.ncbi.nlm.nih.gov/33744862/](https://pubmed.ncbi.nlm.nih.gov/33744862/)  
-   Cette étude met en évidence une augmentation particulière de l'expression de mécanismes liés à l'autophagie avec l'âge chez les chauves-souris, un processus impliqué dans le maintien de l'équilibre cellulaire.
-
-4. **Vazquez, J. M. et al. (2026).** *Insights into longevity and virus-driven adaptation from Myotis bat genomes.* Nature, 658, 153–162.  
-   [https://doi.org/10.1038/s41586-026-10932-7](https://doi.org/10.1038/s41586-026-10932-7)  
-   Cette publication récente analyse les adaptations génétiques de plusieurs espèces de chauves-souris du genre *Myotis*, en étudiant notamment les mécanismes associés à la longévité, à la résistance au cancer et aux interactions avec les virus.
