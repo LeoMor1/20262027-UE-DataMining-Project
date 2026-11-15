@@ -244,9 +244,13 @@ En croisant les quatre domaines, notre enquête fait émerger un scénario qui d
 
 Les données médicales rendent le scénario encore plus intrigant : certains bénéficiaires de MRP-42 sont des responsables de haut niveau dont l'âge biologique estimé est nettement inférieur à leur âge réel. En parallèle, un groupe distinct de patients présente des caractéristiques physiologiques rares. Les documents historiques et les archives suggèrent enfin que les activités étudiées s'inscrivent dans un environnement où la confidentialité, la gouvernance et les stratégies environnementales jouent un rôle important.
 
-**Notre hypothèse finale est donc celle d'un programme biologique confidentiel reliant potentiellement collecte environnementale, logistique spécialisée et interventions cliniques réservées à certains responsables.** Le projet met en évidence plusieurs correspondances solides entre les données, mais ne permet pas encore de prouver le lien matériel direct entre les échantillons environnementaux et les traitements MRP-42, ni d'établir la finalité exacte du programme.
+**Notre hypothèse finale est donc celle d'un programme biologique confidentiel reliant potentiellement collecte environnementale, logistique spécialisée et interventions cliniques réservées à certains responsables.**
 
-L'intérêt de cette enquête réside dans la complémentarité des quatre domaines : Ecology révèle les anomalies sur le terrain, Public Records identifie les acteurs et les autorisations, Logistics reconstitue les mouvements matériels, et Health met en évidence les phénomènes cliniques associés. C'est leur croisement qui permet de construire le narratif global.
+Une piste intéressante serait que ce programme cherche à étudier les caractéristiques biologiques des chauves-souris afin d'explorer leur éventuelle utilisation dans des recherches visant le ralentissement du vieillissement et le rajeunissement des êtres humains.
+
+Le croisement des quatre domaines donne du sens à cette hypothèse : Ecology révèle les anomalies concernant les chauves-souris, Public Records met en évidence les accès aux sites et les témoignages de collecte, Logistics retrace les mouvements de matériel biologique vers Meridian, et Health identifie huit bénéficiaires de MRP-42, tous occupant des postes à responsabilité, dont l'âge biologique estimé est en moyenne inférieur d'environ onze ans à leur âge chronologique.
+
+Cette interprétation reste une hypothèse : les données ne confirment ni l'utilisation des échantillons de chauves-souris dans MRP-42, ni l'existence d'un véritable procédé de rajeunissement humain.
 
 ---
 
